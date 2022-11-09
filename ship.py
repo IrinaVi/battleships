@@ -12,7 +12,7 @@ class Ship:
         for i in range(0, self.length):
             turtle = Turtle("square")
             turtle.color("white")
-            turtle.turtlesize(5)
+            turtle.turtlesize(3)
             turtle.penup()
             turtle.speed(0)
             if self.vertical_direction:
