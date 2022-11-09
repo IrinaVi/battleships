@@ -10,18 +10,15 @@ class Ship:
     def place_ship(self):
         space = 0
         for i in range(0, self.length):
+            turtle = Turtle("square")
+            turtle.color("white")
+            turtle.turtlesize(5)
+            turtle.penup()
+            turtle.speed(0)
             if self.vertical_direction:
-                turtle = Turtle("square")
-                turtle.color("white")
-                turtle.turtlesize(2)
-                turtle.penup()
                 turtle.goto(self.head_position[0],self.head_position[1]-space)
                 space += 40
             else:
-                turtle = Turtle("square")
-                turtle.color("white")
-                turtle.turtlesize(2)
-                turtle.penup()
                 turtle.goto(self.head_position[0]-space,self.head_position[1])
                 space += 40
 
