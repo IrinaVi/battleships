@@ -6,7 +6,10 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Battleships")
 
-ship = Ship(x_position=10,y_position=10,vertical_direction=True,length=2)
-ship.place_ship()
+ship1 = Ship(x_position=-280,y_position=280,vertical_direction=True,length=3)
+ship1.place_ship()
+
+ship2 = Ship(x_position=280,y_position=-280,vertical_direction=False,length=4)
+ship2.place_ship()
 
 screen.exitonclick()
